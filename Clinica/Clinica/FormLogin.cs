@@ -35,9 +35,23 @@ namespace Clinica
                 this.Close();
             }
             else
+            if (usuario == "user1" && contrasena == "456")
+            {
+                this.Close();
+            }
+            else
             {
                 MessageBox.Show("Usuario o Contraseña Incorrecta");
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox1.Focus();
+
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

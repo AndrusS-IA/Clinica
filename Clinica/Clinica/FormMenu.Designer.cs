@@ -173,6 +173,7 @@
             this.acercaDelProgramaToolStripMenuItem.Name = "acercaDelProgramaToolStripMenuItem";
             this.acercaDelProgramaToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.acercaDelProgramaToolStripMenuItem.Text = "Acerca del Programa";
+            this.acercaDelProgramaToolStripMenuItem.Click += new System.EventHandler(this.acercaDelProgramaToolStripMenuItem_Click);
             // 
             // FormMenu
             // 

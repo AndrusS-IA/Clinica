@@ -88,5 +88,12 @@ namespace Clinica
         {
             Login();
         }
+
+        private void acercaDelProgramaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formAcercaPrograma = new FormAcercaPrograma();
+            formAcercaPrograma.MdiParent = this;
+            formAcercaPrograma.Show();
+        }
     }
 }

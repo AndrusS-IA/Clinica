@@ -32,3 +32,4 @@ C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.Fo
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.FormReportePatologias.resources
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.Cache
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.FormAcercaPrograma.resources
