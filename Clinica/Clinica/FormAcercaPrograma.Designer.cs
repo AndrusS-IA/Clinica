@@ -101,23 +101,23 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(103, 129);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 13);
+            this.label7.Size = new System.Drawing.Size(44, 13);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Andrus Sanchez - 20021003700";
+            this.label7.Text = "Franklin";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(103, 148);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(160, 13);
+            this.label8.Size = new System.Drawing.Size(38, 13);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Andrus Sanchez - 20021003700";
+            this.label8.Text = "Gerald";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(103, 168);
+            this.label9.Location = new System.Drawing.Point(107, 167);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(156, 13);
             this.label9.TabIndex = 8;
