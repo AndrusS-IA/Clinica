@@ -108,11 +108,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(103, 148);
+            this.label8.Location = new System.Drawing.Point(99, 149);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
+            this.label8.Size = new System.Drawing.Size(174, 13);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Gerald";
+            this.label8.Text = "Kimberly G. Estrada - 20142005669";
             // 
             // label9
             // 
