@@ -99,11 +99,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(103, 129);
+            this.label7.Location = new System.Drawing.Point(112, 129);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.Size = new System.Drawing.Size(143, 13);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Franklin";
+            this.label7.Text = "Franklin Milla - 20152030487";
             // 
             // label8
             // 
