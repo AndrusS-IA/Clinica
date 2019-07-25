@@ -157,6 +157,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Clinica.BL.Paciente.datasource" />
+    <None Include="Properties\DataSources\Clinica.BL.PacientesBL.datasource" />
+    <None Include="Properties\DataSources\Clinica.BL.SeguridadBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -172,6 +175,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clinica.BL\Clinica.BL.csproj">
+      <Project>{fa265d27-42cb-42ba-aa54-de80ba73b724}</Project>
+      <Name>Clinica.BL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

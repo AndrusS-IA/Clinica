@@ -1,0 +1,5 @@
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\bin\Debug\Clinica.BL.dll
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\bin\Debug\Clinica.BL.pdb
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\obj\Debug\Clinica.BL.dll
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\obj\Debug\Clinica.BL.pdb
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\obj\Debug\Clinica.BL.csprojResolveAssemblyReference.cache

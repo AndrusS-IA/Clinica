@@ -95,5 +95,11 @@ namespace Clinica
             formAcercaPrograma.MdiParent = this;
             formAcercaPrograma.Show();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Esta Saliendo del Programa");
+            Application.Exit();
+        }
     }
 }
