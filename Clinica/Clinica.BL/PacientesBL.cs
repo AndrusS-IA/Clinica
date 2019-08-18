@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,50 +10,20 @@ namespace Clinica.BL
 {
     public class PacientesBL
     {
+        Contexto _contexto;
         public BindingList<Paciente> ListaPacientes { get; set; } //BindingList nos permite crear una lista de pacientes
                                                                   // entre <> se puede poner el tipo de clase
         public PacientesBL() //ctor + 2 tab = creacion de construnctor //El () es el constructor
         {
+            _contexto = new Contexto();
             ListaPacientes = new BindingList<Paciente>();
-
-            var paciente1 = new Paciente();
-            paciente1.Id = 1;
-            paciente1.Nombre = "Fidelio";
-            paciente1.Sexo = "Masculino";
-            paciente1.Edad = 30;
-            paciente1.Peso = 150.00;
-            paciente1.Talla = 180.00;
-            paciente1.Activo = true;
-
-            ListaPacientes.Add(paciente1);
-
-            var paciente2 = new Paciente();
-            paciente2.Id = 2;
-            paciente2.Nombre = "Anastasia";
-            paciente2.Sexo = "Femenino";
-            paciente2.Edad = 25;
-            paciente2.Peso = 90.00;
-            paciente2.Talla = 160.00;
-            paciente2.Activo = true;
-
-            ListaPacientes.Add(paciente2);
-
-            var paciente3 = new Paciente();
-            paciente3.Id = 3;
-            paciente3.Nombre = "Marcos";
-            paciente3.Sexo = "Masculino";
-            paciente3.Edad = 60;
-            paciente3.Peso = 160.00;
-            paciente3.Talla = 190.00;
-            paciente3.Activo = true;
-
-            ListaPacientes.Add(paciente3);
-
-
         }
 
         public BindingList<Paciente> ObtenerPacientes()
         {
+            _contexto.Pacientes.Load(); //Carga los datos desde la Lista de Pacientes
+            ListaPacientes = _contexto.Pacientes.Local.ToBindingList(); //Pasa todos los datos cargados al bindignList
+
             return ListaPacientes;
         }
 
@@ -64,10 +35,7 @@ namespace Clinica.BL
                 return resultado;
             }
 
-            if (paciente.Id == 0) //Siempre el identificador de un nuevo Paciente es 0 para el ID
-            {
-                paciente.Id = ListaPacientes.Max(item => item.Id) + 1; //Funcion de busqueda del maximo item y le suma 1 para un nuevo registro
-            }
+            _contexto.SaveChanges(); //Funcion del EntityFrameworks para almacenar Datos.
 
             resultado.Exitoso = true;
             return resultado;
@@ -87,6 +55,7 @@ namespace Clinica.BL
                 if (paciente.Id == id) //definir si es el ID que deseamos eliminar
                 {
                     ListaPacientes.Remove(paciente);
+                    _contexto.SaveChanges(); //Guarda los cambios de eliminacion en el EntityFrameworks
                     return true;
                 }
             }

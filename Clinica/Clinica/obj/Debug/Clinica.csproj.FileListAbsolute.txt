@@ -36,3 +36,7 @@ C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.Fo
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.FormReporteCitas.resources
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\Clinica.BL.dll
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\Clinica.BL.pdb
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\EntityFramework.dll
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\EntityFramework.xml
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\EntityFramework.SqlServer.xml

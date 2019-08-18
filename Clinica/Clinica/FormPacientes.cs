@@ -28,7 +28,7 @@ namespace Clinica
 
         }
 
-        private void listaPacientesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void listaPacientesBindingNavigatorSaveItem_Click(object sender, EventArgs e) //Boton de Guardar
         {
             listaPacientesBindingSource.EndEdit(); //EndEdit - Esta instruccion debe decirle a formulario que ya dejamos de escribir
 
@@ -40,6 +40,7 @@ namespace Clinica
             {
                 listaPacientesBindingSource.ResetBindings(false); //Reset resetea los cambios para la lista
                 DesabilitarHabilitarBotones(true);
+                MessageBox.Show("Paciente Guardado");
             }
             else
             {
@@ -47,7 +48,7 @@ namespace Clinica
             }
         }
 
-        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e) //
         {
             _pacientes.AgregarPaciente();
             listaPacientesBindingSource.MoveLast(); //MoveLast lleva nos lleva a lo ultimo de la lista
@@ -68,7 +69,7 @@ namespace Clinica
             toolStripButtonCancelar.Visible = !valor; //! cambia el valor contrario al Bool o negacion del Bool
         }
 
-        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e) //Boton de Eliminar
         {
 
             if (idTextBox.Text != "")

@@ -3,3 +3,8 @@ C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\bin\Debug\Clinica
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\obj\Debug\Clinica.BL.dll
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\obj\Debug\Clinica.BL.pdb
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\obj\Debug\Clinica.BL.csprojResolveAssemblyReference.cache
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\bin\Debug\Clinica.BL.dll.config
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\bin\Debug\EntityFramework.dll
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\bin\Debug\EntityFramework.xml
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica.BL\bin\Debug\EntityFramework.SqlServer.xml
