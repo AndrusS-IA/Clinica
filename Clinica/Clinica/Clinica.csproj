@@ -167,9 +167,15 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Clinica.BL.EspecialidadesBL.datasource" />
+    <None Include="Properties\DataSources\Clinica.BL.EstadosBL.datasource" />
+    <None Include="Properties\DataSources\Clinica.BL.JornadasBL.datasource" />
+    <None Include="Properties\DataSources\Clinica.BL.Medico.datasource" />
+    <None Include="Properties\DataSources\Clinica.BL.MedicosBL.datasource" />
     <None Include="Properties\DataSources\Clinica.BL.Paciente.datasource" />
     <None Include="Properties\DataSources\Clinica.BL.PacientesBL.datasource" />
     <None Include="Properties\DataSources\Clinica.BL.SeguridadBL.datasource" />
+    <None Include="Properties\DataSources\Clinica.BL.TiposBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

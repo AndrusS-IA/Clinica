@@ -11,6 +11,7 @@ namespace Clinica.BL
     public class PacientesBL
     {
         Contexto _contexto;
+
         public BindingList<Paciente> ListaPacientes { get; set; } //BindingList nos permite crear una lista de pacientes
                                                                   // entre <> se puede poner el tipo de clase
         public PacientesBL() //ctor + 2 tab = creacion de construnctor //El () es el constructor
@@ -46,6 +47,15 @@ namespace Clinica.BL
             var nuevoPaciente = new Paciente(); //Intancia de variable
 
             ListaPacientes.Add(nuevoPaciente); //Agregar a la lista
+        }
+
+        public void CancelarCambios() //Cancelar cuando no terminemos de agregar
+        {
+            foreach (var item in _contexto.ChangeTracker.Entries())
+            {
+                item.State = EntityState.Unchanged;
+                item.Reload();
+            }
         }
 
         public bool ElimiarPaciente(int id) //Funcion para Eliminar Pacientes de la lista
@@ -89,7 +99,19 @@ namespace Clinica.BL
                     }
                 }
             }
-           
+
+            if (paciente.EstadoId == 0)
+            {
+                resultado.Mensaje = "Selecciones un Estado Civil";
+                resultado.Exitoso = false;
+            }
+
+            if (paciente.TipoId == 0)
+            {
+                resultado.Mensaje = "Selecciones un Estado Civil";
+                resultado.Exitoso = false;
+            }
+
             return resultado;
         }
     }
@@ -100,8 +122,13 @@ namespace Clinica.BL
         public String Nombre { get; set; }
         public int Edad { get; set; }
         public String Sexo { get; set; }
+        public int EstadoId { get; set; } //Relacion Foranea de las Tablas de Pacientes y Estado Civil
+        public Estado Estado { get; set; }
+        public int TipoId { get; set; }
+        public Tipo Tipo { get; set; }
         public double Talla { get; set; }
         public double Peso { get; set; }
+        public byte[] Foto { get; set; }
         public bool Activo { get; set; }
 
     }
