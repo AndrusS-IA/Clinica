@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitasBL.cs" />
     <Compile Include="Contexto.cs" />
     <Compile Include="DatosdeInicio.cs" />
     <Compile Include="EspecialidadesBL.cs" />
@@ -56,8 +57,10 @@
     <Compile Include="JornadasBL.cs" />
     <Compile Include="MedicosBL.cs" />
     <Compile Include="PacientesBL.cs" />
+    <Compile Include="RecetasBL.cs" />
     <Compile Include="SeguridadBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CategoriasBL.cs" />
     <Compile Include="TiposBL.cs" />
     <Compile Include="UsuariosBL.cs" />
   </ItemGroup>
@@ -66,6 +69,9 @@
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

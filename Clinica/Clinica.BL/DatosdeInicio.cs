@@ -76,6 +76,16 @@ namespace Clinica.BL
             jornada3.Descripcion = "Nocturna";
             contexto.Jornadas.Add(jornada3);
 
+            //Tipo de Suministro o Medicamento
+            var categoria1 = new Categoria();
+            categoria1.Descripcion = "Medicamento";
+            contexto.Categorias.Add(categoria1);
+
+            var categoria2 = new Categoria();
+            categoria2.Descripcion = "Suministro";
+            contexto.Categorias.Add(categoria2);
+
+
             base.Seed(contexto);
         }
     }

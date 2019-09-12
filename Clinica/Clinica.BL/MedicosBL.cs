@@ -79,6 +79,13 @@ namespace Clinica.BL
             var resultado = new Resultado();
             resultado.Exitoso = true;
 
+            if (medico == null)
+            {
+                resultado.Mensaje = "Agregue un Medico";
+                resultado.Exitoso = false;
+
+                return resultado;
+            }
 
             if (string.IsNullOrEmpty(medico.Nombre) == true)//********
             {
@@ -120,6 +127,7 @@ namespace Clinica.BL
         public Especialidad Especialidad { get; set; }
         public int JornadaId { get; set; }
         public Jornada Jornada { get; set; }
+        public double Costo { get; set; }
         public bool Activo { get; set; }
 
     }

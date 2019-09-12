@@ -78,6 +78,13 @@ namespace Clinica.BL
             var resultado = new Resultado();
             resultado.Exitoso = true;
 
+            if (paciente == null)
+            {
+                resultado.Mensaje = "Agregue un Paciente";
+                resultado.Exitoso = false;
+
+                return resultado;
+            }
 
             if (string.IsNullOrEmpty(paciente.Nombre) == true)
             {

@@ -26,8 +26,11 @@ namespace Clinica.BL
         public DbSet<Estado> Estados { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
         public DbSet<Medico> Medicos { get; set; }
+        public DbSet<Cita> Citas { get; set; }
+        public DbSet<Receta> Recetas { get; set; }
         public DbSet<Especialidad> Especialidades { get; set; }
         public DbSet<Jornada> Jornadas { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
 
     }
 

@@ -32,10 +32,10 @@ namespace Clinica
             listaJornadasBindingSource.DataSource = _jornadas.ObtenerJornadas();
         }
 
-        private void FormMedicos_Load(object sender, EventArgs e)
-        {
+       // private void FormMedicos_Load(object sender, EventArgs e)
+      //  {
 
-        }
+       // }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
