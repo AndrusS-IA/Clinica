@@ -27,7 +27,24 @@ namespace Clinica
             Application.Exit();
         }
 
+
+      
         private void button1_Click(object sender, EventArgs e)
+        {
+            Autenticar();
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter) 
+               && !string.IsNullOrEmpty(textBox1.Text)
+               && !string.IsNullOrEmpty(textBox2.Text))
+                {
+                Autenticar();
+                }
+            }
+
+        private void Autenticar()
         {
             string usuario;
             string contrasena;
@@ -57,17 +74,27 @@ namespace Clinica
             }
         }
 
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyChar == Convert.ToChar(Keys.Enter) && !string.IsNullOrEmpty(textBox1.Text))
             {
-                Application.DoEvents();
+                textBox2.Focus();
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void FormLogin_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+     
     }
-}
+
+       
+    }
+

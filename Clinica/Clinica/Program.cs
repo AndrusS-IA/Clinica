@@ -18,7 +18,7 @@ namespace Clinica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMenu()); //Cambio de Arranque de Formulario de Login a Menu
+            Application.Run(new MenuNew()); //Cambio de Arranque de Formulario de Login a Menu
         }
 
         public static byte[] imagetoByteArray(Image imageIn) //Convertir una Imagen a un arreglo de tipo Byte

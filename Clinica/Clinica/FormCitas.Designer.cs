@@ -70,6 +70,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaEspecialidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             activoLabel = new System.Windows.Forms.Label();
             fechaLabel = new System.Windows.Forms.Label();
             fechaCitaLabel = new System.Windows.Forms.Label();
@@ -89,8 +90,10 @@
             // 
             // activoLabel
             // 
+            activoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(374, 44);
+            activoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            activoLabel.Location = new System.Drawing.Point(385, 84);
             activoLabel.Name = "activoLabel";
             activoLabel.Size = new System.Drawing.Size(40, 13);
             activoLabel.TabIndex = 25;
@@ -98,8 +101,10 @@
             // 
             // fechaLabel
             // 
+            fechaLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             fechaLabel.AutoSize = true;
-            fechaLabel.Location = new System.Drawing.Point(111, 44);
+            fechaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            fechaLabel.Location = new System.Drawing.Point(122, 84);
             fechaLabel.Name = "fechaLabel";
             fechaLabel.Size = new System.Drawing.Size(40, 13);
             fechaLabel.TabIndex = 27;
@@ -107,8 +112,10 @@
             // 
             // fechaCitaLabel
             // 
+            fechaCitaLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             fechaCitaLabel.AutoSize = true;
-            fechaCitaLabel.Location = new System.Drawing.Point(16, 107);
+            fechaCitaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            fechaCitaLabel.Location = new System.Drawing.Point(27, 147);
             fechaCitaLabel.Name = "fechaCitaLabel";
             fechaCitaLabel.Size = new System.Drawing.Size(61, 13);
             fechaCitaLabel.TabIndex = 29;
@@ -116,17 +123,22 @@
             // 
             // historialLabel
             // 
+            historialLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             historialLabel.AutoSize = true;
-            historialLabel.Location = new System.Drawing.Point(30, 252);
+            historialLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            historialLabel.Location = new System.Drawing.Point(41, 292);
             historialLabel.Name = "historialLabel";
             historialLabel.Size = new System.Drawing.Size(68, 13);
             historialLabel.TabIndex = 31;
             historialLabel.Text = "Comentarios:";
+            historialLabel.Click += new System.EventHandler(this.historialLabel_Click);
             // 
             // idLabel
             // 
+            idLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(18, 44);
+            idLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            idLabel.Location = new System.Drawing.Point(29, 84);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(19, 13);
             idLabel.TabIndex = 33;
@@ -134,8 +146,10 @@
             // 
             // pacienteIdLabel
             // 
+            pacienteIdLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             pacienteIdLabel.AutoSize = true;
-            pacienteIdLabel.Location = new System.Drawing.Point(16, 73);
+            pacienteIdLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            pacienteIdLabel.Location = new System.Drawing.Point(27, 113);
             pacienteIdLabel.Name = "pacienteIdLabel";
             pacienteIdLabel.Size = new System.Drawing.Size(64, 13);
             pacienteIdLabel.TabIndex = 35;
@@ -143,8 +157,10 @@
             // 
             // totalLabel
             // 
+            totalLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(454, 271);
+            totalLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            totalLabel.Location = new System.Drawing.Point(465, 311);
             totalLabel.Name = "totalLabel";
             totalLabel.Size = new System.Drawing.Size(34, 13);
             totalLabel.TabIndex = 37;
@@ -160,8 +176,9 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(510, 133);
+            this.button1.Location = new System.Drawing.Point(521, 173);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 23);
             this.button1.TabIndex = 16;
@@ -171,8 +188,9 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(563, 133);
+            this.button2.Location = new System.Drawing.Point(574, 173);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 23);
             this.button2.TabIndex = 17;
@@ -182,9 +200,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 143);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(27, 183);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 23;
@@ -192,10 +212,11 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(475, 36);
+            this.label3.Location = new System.Drawing.Point(486, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 24);
             this.label3.TabIndex = 25;
@@ -341,7 +362,7 @@
             this.listaCitasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaCitasBindingNavigator.Name = "listaCitasBindingNavigator";
             this.listaCitasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaCitasBindingNavigator.Size = new System.Drawing.Size(624, 25);
+            this.listaCitasBindingNavigator.Size = new System.Drawing.Size(646, 25);
             this.listaCitasBindingNavigator.TabIndex = 0;
             this.listaCitasBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -353,9 +374,10 @@
             // 
             // activoCheckBox
             // 
+            this.activoCheckBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listaCitasBindingSource, "Activo", true));
             this.activoCheckBox.Enabled = false;
-            this.activoCheckBox.Location = new System.Drawing.Point(420, 39);
+            this.activoCheckBox.Location = new System.Drawing.Point(431, 79);
             this.activoCheckBox.Name = "activoCheckBox";
             this.activoCheckBox.Size = new System.Drawing.Size(30, 24);
             this.activoCheckBox.TabIndex = 26;
@@ -363,24 +385,27 @@
             // 
             // fechaDateTimePicker
             // 
+            this.fechaDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fechaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.listaCitasBindingSource, "Fecha", true));
-            this.fechaDateTimePicker.Location = new System.Drawing.Point(157, 41);
+            this.fechaDateTimePicker.Location = new System.Drawing.Point(168, 81);
             this.fechaDateTimePicker.Name = "fechaDateTimePicker";
             this.fechaDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.fechaDateTimePicker.TabIndex = 28;
             // 
             // fechaCitaDateTimePicker
             // 
+            this.fechaCitaDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fechaCitaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.listaCitasBindingSource, "FechaCita", true));
-            this.fechaCitaDateTimePicker.Location = new System.Drawing.Point(88, 101);
+            this.fechaCitaDateTimePicker.Location = new System.Drawing.Point(99, 141);
             this.fechaCitaDateTimePicker.Name = "fechaCitaDateTimePicker";
             this.fechaCitaDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.fechaCitaDateTimePicker.TabIndex = 30;
             // 
             // historialTextBox
             // 
+            this.historialTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.historialTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaCitasBindingSource, "Historial", true));
-            this.historialTextBox.Location = new System.Drawing.Point(21, 268);
+            this.historialTextBox.Location = new System.Drawing.Point(32, 308);
             this.historialTextBox.Multiline = true;
             this.historialTextBox.Name = "historialTextBox";
             this.historialTextBox.Size = new System.Drawing.Size(414, 63);
@@ -388,8 +413,9 @@
             // 
             // idTextBox
             // 
+            this.idTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaCitasBindingSource, "Id", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "00000"));
-            this.idTextBox.Location = new System.Drawing.Point(43, 41);
+            this.idTextBox.Location = new System.Drawing.Point(54, 81);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.ReadOnly = true;
             this.idTextBox.Size = new System.Drawing.Size(52, 20);
@@ -397,12 +423,13 @@
             // 
             // pacienteIdComboBox
             // 
+            this.pacienteIdComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pacienteIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaCitasBindingSource, "PacienteId", true));
             this.pacienteIdComboBox.DataSource = this.listaPacientesBindingSource;
             this.pacienteIdComboBox.DisplayMember = "Nombre";
             this.pacienteIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.pacienteIdComboBox.FormattingEnabled = true;
-            this.pacienteIdComboBox.Location = new System.Drawing.Point(88, 70);
+            this.pacienteIdComboBox.Location = new System.Drawing.Point(99, 110);
             this.pacienteIdComboBox.Name = "pacienteIdComboBox";
             this.pacienteIdComboBox.Size = new System.Drawing.Size(347, 21);
             this.pacienteIdComboBox.TabIndex = 36;
@@ -410,8 +437,9 @@
             // 
             // totalTextBox
             // 
+            this.totalTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaCitasBindingSource, "Total", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
-            this.totalTextBox.Location = new System.Drawing.Point(494, 268);
+            this.totalTextBox.Location = new System.Drawing.Point(505, 308);
             this.totalTextBox.Name = "totalTextBox";
             this.totalTextBox.ReadOnly = true;
             this.totalTextBox.Size = new System.Drawing.Size(116, 20);
@@ -420,13 +448,14 @@
             // 
             // citaDetalleDataGridView
             // 
+            this.citaDetalleDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.citaDetalleDataGridView.AutoGenerateColumns = false;
             this.citaDetalleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.citaDetalleDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn5});
             this.citaDetalleDataGridView.DataSource = this.citaDetalleBindingSource;
-            this.citaDetalleDataGridView.Location = new System.Drawing.Point(12, 168);
+            this.citaDetalleDataGridView.Location = new System.Drawing.Point(23, 208);
             this.citaDetalleDataGridView.Name = "citaDetalleDataGridView";
             this.citaDetalleDataGridView.Size = new System.Drawing.Size(598, 71);
             this.citaDetalleDataGridView.TabIndex = 38;
@@ -455,12 +484,25 @@
             // 
             this.listaEspecialidadesBindingSource.DataSource = typeof(Clinica.BL.Especialidad);
             // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.Location = new System.Drawing.Point(546, 343);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "Cerrar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // FormCitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(624, 338);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(123)))), ((int)(((byte)(141)))));
+            this.ClientSize = new System.Drawing.Size(646, 418);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.citaDetalleDataGridView);
             this.Controls.Add(activoLabel);
             this.Controls.Add(this.activoCheckBox);
@@ -533,5 +575,6 @@
         private System.Windows.Forms.BindingSource listaEspecialidadesBindingSource;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Button button3;
     }
 }

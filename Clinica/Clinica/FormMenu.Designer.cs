@@ -33,8 +33,8 @@
             this.citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.citasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.resetariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.citasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDePacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,19 +88,19 @@
             this.medicosToolStripMenuItem.Text = "Medicos";
             this.medicosToolStripMenuItem.Click += new System.EventHandler(this.medicosToolStripMenuItem_Click);
             // 
-            // citasToolStripMenuItem1
-            // 
-            this.citasToolStripMenuItem1.Name = "citasToolStripMenuItem1";
-            this.citasToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.citasToolStripMenuItem1.Text = "Citas";
-            this.citasToolStripMenuItem1.Click += new System.EventHandler(this.citasToolStripMenuItem1_Click);
-            // 
             // resetariosToolStripMenuItem
             // 
             this.resetariosToolStripMenuItem.Name = "resetariosToolStripMenuItem";
             this.resetariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.resetariosToolStripMenuItem.Text = "Resetarios";
             this.resetariosToolStripMenuItem.Click += new System.EventHandler(this.resetariosToolStripMenuItem_Click);
+            // 
+            // citasToolStripMenuItem1
+            // 
+            this.citasToolStripMenuItem1.Name = "citasToolStripMenuItem1";
+            this.citasToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.citasToolStripMenuItem1.Text = "Citas";
+            this.citasToolStripMenuItem1.Click += new System.EventHandler(this.citasToolStripMenuItem1_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -170,6 +170,7 @@
             this.preguntasFrecuentesToolStripMenuItem.Name = "preguntasFrecuentesToolStripMenuItem";
             this.preguntasFrecuentesToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.preguntasFrecuentesToolStripMenuItem.Text = "Preguntas Frecuentes";
+            this.preguntasFrecuentesToolStripMenuItem.Click += new System.EventHandler(this.preguntasFrecuentesToolStripMenuItem_Click);
             // 
             // acercaDelProgramaToolStripMenuItem
             // 

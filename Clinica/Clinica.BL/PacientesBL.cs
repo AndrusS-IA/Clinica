@@ -22,7 +22,8 @@ namespace Clinica.BL
 
         public BindingList<Paciente> ObtenerPacientes()
         {
-            _contexto.Pacientes.Load(); //Carga los datos desde la Lista de Pacientes
+           _contexto.Pacientes.Load(); //Carga los datos desde la Lista de Pacientes
+
             ListaPacientes = _contexto.Pacientes.Local.ToBindingList(); //Pasa todos los datos cargados al bindignList
 
             return ListaPacientes;

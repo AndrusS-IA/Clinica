@@ -167,5 +167,26 @@ namespace Clinica
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+            var buscar = txtBuscar.Text;
+
+            if (string.IsNullOrEmpty(buscar) == true)
+            {
+                listaPacientesBindingSource.DataSource = _pacientes.ObtenerPacientes();
+            }
+            else
+            {
+                listaPacientesBindingSource.DataSource = _pacientes.ObtenerPacientes();
+            }
+
+            listaPacientesBindingSource.ResetBindings(false);
+        }
     }
 }

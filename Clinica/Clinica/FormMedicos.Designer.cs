@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMedicos));
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label nombreLabel;
             System.Windows.Forms.Label jornadaIdLabel;
@@ -37,6 +36,7 @@
             System.Windows.Forms.Label codigoLabel;
             System.Windows.Forms.Label activoLabel;
             System.Windows.Forms.Label costoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMedicos));
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -51,9 +51,9 @@
             this.listaMedicosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonCancelar = new System.Windows.Forms.ToolStripButton();
             this.listaMedicosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.listaMedicosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaEspecialidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaJornadasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listaMedicosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.jornadaIdComboBox = new System.Windows.Forms.ComboBox();
             this.idTextBox = new System.Windows.Forms.TextBox();
@@ -70,10 +70,87 @@
             costoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.listaMedicosBindingNavigator)).BeginInit();
             this.listaMedicosBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaMedicosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaEspecialidadesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaJornadasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaMedicosBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // idLabel
+            // 
+            idLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            idLabel.AutoSize = true;
+            idLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            idLabel.Location = new System.Drawing.Point(106, 150);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.TabIndex = 11;
+            idLabel.Text = "Id:";
+            // 
+            // nombreLabel
+            // 
+            nombreLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            nombreLabel.AutoSize = true;
+            nombreLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            nombreLabel.Location = new System.Drawing.Point(106, 183);
+            nombreLabel.Name = "nombreLabel";
+            nombreLabel.Size = new System.Drawing.Size(47, 13);
+            nombreLabel.TabIndex = 12;
+            nombreLabel.Text = "Nombre:";
+            // 
+            // jornadaIdLabel
+            // 
+            jornadaIdLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            jornadaIdLabel.AutoSize = true;
+            jornadaIdLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            jornadaIdLabel.Location = new System.Drawing.Point(106, 293);
+            jornadaIdLabel.Name = "jornadaIdLabel";
+            jornadaIdLabel.Size = new System.Drawing.Size(48, 13);
+            jornadaIdLabel.TabIndex = 21;
+            jornadaIdLabel.Text = "Jornada:";
+            // 
+            // especialidadIdLabel
+            // 
+            especialidadIdLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            especialidadIdLabel.AutoSize = true;
+            especialidadIdLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            especialidadIdLabel.Location = new System.Drawing.Point(106, 259);
+            especialidadIdLabel.Name = "especialidadIdLabel";
+            especialidadIdLabel.Size = new System.Drawing.Size(70, 13);
+            especialidadIdLabel.TabIndex = 17;
+            especialidadIdLabel.Text = "Especialidad:";
+            // 
+            // codigoLabel
+            // 
+            codigoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            codigoLabel.AutoSize = true;
+            codigoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            codigoLabel.Location = new System.Drawing.Point(106, 221);
+            codigoLabel.Name = "codigoLabel";
+            codigoLabel.Size = new System.Drawing.Size(65, 13);
+            codigoLabel.TabIndex = 15;
+            codigoLabel.Text = "Colegiación:";
+            // 
+            // activoLabel
+            // 
+            activoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            activoLabel.AutoSize = true;
+            activoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            activoLabel.Location = new System.Drawing.Point(313, 330);
+            activoLabel.Name = "activoLabel";
+            activoLabel.Size = new System.Drawing.Size(40, 13);
+            activoLabel.TabIndex = 13;
+            activoLabel.Text = "Activo:";
+            // 
+            // costoLabel
+            // 
+            costoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            costoLabel.AutoSize = true;
+            costoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            costoLabel.Location = new System.Drawing.Point(106, 330);
+            costoLabel.Name = "costoLabel";
+            costoLabel.Size = new System.Drawing.Size(93, 13);
+            costoLabel.TabIndex = 21;
+            costoLabel.Text = "Valor de Consulta:";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -209,9 +286,13 @@
             this.listaMedicosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaMedicosBindingNavigator.Name = "listaMedicosBindingNavigator";
             this.listaMedicosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaMedicosBindingNavigator.Size = new System.Drawing.Size(408, 25);
+            this.listaMedicosBindingNavigator.Size = new System.Drawing.Size(576, 25);
             this.listaMedicosBindingNavigator.TabIndex = 13;
             this.listaMedicosBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // listaMedicosBindingSource
+            // 
+            this.listaMedicosBindingSource.DataSource = typeof(Clinica.BL.Medico);
             // 
             // listaEspecialidadesBindingSource
             // 
@@ -223,62 +304,34 @@
             this.listaJornadasBindingSource.DataSource = typeof(Clinica.BL.Jornada);
             this.listaJornadasBindingSource.CurrentChanged += new System.EventHandler(this.listaJornadasBindingSource_CurrentChanged);
             // 
-            // listaMedicosBindingSource
-            // 
-            this.listaMedicosBindingSource.DataSource = typeof(Clinica.BL.Medico);
-            // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(22, 50);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 11;
-            idLabel.Text = "Id:";
-            // 
             // nombreTextBox
             // 
+            this.nombreTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaMedicosBindingSource, "Nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(71, 80);
+            this.nombreTextBox.Location = new System.Drawing.Point(155, 180);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(317, 20);
             this.nombreTextBox.TabIndex = 1;
             // 
-            // nombreLabel
-            // 
-            nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(22, 83);
-            nombreLabel.Name = "nombreLabel";
-            nombreLabel.Size = new System.Drawing.Size(47, 13);
-            nombreLabel.TabIndex = 12;
-            nombreLabel.Text = "Nombre:";
-            // 
             // jornadaIdComboBox
             // 
+            this.jornadaIdComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jornadaIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaMedicosBindingSource, "JornadaId", true));
             this.jornadaIdComboBox.DataSource = this.listaJornadasBindingSource;
             this.jornadaIdComboBox.DisplayMember = "Descripcion";
             this.jornadaIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.jornadaIdComboBox.FormattingEnabled = true;
-            this.jornadaIdComboBox.Location = new System.Drawing.Point(98, 190);
+            this.jornadaIdComboBox.Location = new System.Drawing.Point(182, 290);
             this.jornadaIdComboBox.Name = "jornadaIdComboBox";
             this.jornadaIdComboBox.Size = new System.Drawing.Size(181, 21);
             this.jornadaIdComboBox.TabIndex = 9;
             this.jornadaIdComboBox.ValueMember = "Id";
             // 
-            // jornadaIdLabel
-            // 
-            jornadaIdLabel.AutoSize = true;
-            jornadaIdLabel.Location = new System.Drawing.Point(22, 193);
-            jornadaIdLabel.Name = "jornadaIdLabel";
-            jornadaIdLabel.Size = new System.Drawing.Size(48, 13);
-            jornadaIdLabel.TabIndex = 21;
-            jornadaIdLabel.Text = "Jornada:";
-            // 
             // idTextBox
             // 
+            this.idTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaMedicosBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(47, 47);
+            this.idTextBox.Location = new System.Drawing.Point(131, 147);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.ReadOnly = true;
             this.idTextBox.Size = new System.Drawing.Size(60, 20);
@@ -286,75 +339,43 @@
             // 
             // especialidadIdComboBox
             // 
+            this.especialidadIdComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.especialidadIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaMedicosBindingSource, "EspecialidadId", true));
             this.especialidadIdComboBox.DataSource = this.listaEspecialidadesBindingSource;
             this.especialidadIdComboBox.DisplayMember = "Descripcion";
             this.especialidadIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.especialidadIdComboBox.FormattingEnabled = true;
-            this.especialidadIdComboBox.Location = new System.Drawing.Point(98, 156);
+            this.especialidadIdComboBox.Location = new System.Drawing.Point(182, 256);
             this.especialidadIdComboBox.Name = "especialidadIdComboBox";
             this.especialidadIdComboBox.Size = new System.Drawing.Size(181, 21);
             this.especialidadIdComboBox.TabIndex = 4;
             this.especialidadIdComboBox.ValueMember = "Id";
             // 
-            // especialidadIdLabel
-            // 
-            especialidadIdLabel.AutoSize = true;
-            especialidadIdLabel.Location = new System.Drawing.Point(22, 159);
-            especialidadIdLabel.Name = "especialidadIdLabel";
-            especialidadIdLabel.Size = new System.Drawing.Size(70, 13);
-            especialidadIdLabel.TabIndex = 17;
-            especialidadIdLabel.Text = "Especialidad:";
-            // 
             // codigoTextBox
             // 
+            this.codigoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.codigoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaMedicosBindingSource, "Codigo", true));
-            this.codigoTextBox.Location = new System.Drawing.Point(98, 118);
+            this.codigoTextBox.Location = new System.Drawing.Point(182, 218);
             this.codigoTextBox.MaxLength = 8;
             this.codigoTextBox.Name = "codigoTextBox";
             this.codigoTextBox.Size = new System.Drawing.Size(103, 20);
             this.codigoTextBox.TabIndex = 2;
             // 
-            // codigoLabel
-            // 
-            codigoLabel.AutoSize = true;
-            codigoLabel.Location = new System.Drawing.Point(22, 121);
-            codigoLabel.Name = "codigoLabel";
-            codigoLabel.Size = new System.Drawing.Size(65, 13);
-            codigoLabel.TabIndex = 15;
-            codigoLabel.Text = "Colegiación:";
-            // 
             // activoCheckBox
             // 
+            this.activoCheckBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listaMedicosBindingSource, "Activo", true));
-            this.activoCheckBox.Location = new System.Drawing.Point(275, 225);
+            this.activoCheckBox.Location = new System.Drawing.Point(359, 325);
             this.activoCheckBox.Name = "activoCheckBox";
             this.activoCheckBox.Size = new System.Drawing.Size(121, 24);
             this.activoCheckBox.TabIndex = 3;
             this.activoCheckBox.UseVisualStyleBackColor = true;
             // 
-            // activoLabel
-            // 
-            activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(229, 230);
-            activoLabel.Name = "activoLabel";
-            activoLabel.Size = new System.Drawing.Size(40, 13);
-            activoLabel.TabIndex = 13;
-            activoLabel.Text = "Activo:";
-            // 
-            // costoLabel
-            // 
-            costoLabel.AutoSize = true;
-            costoLabel.Location = new System.Drawing.Point(22, 230);
-            costoLabel.Name = "costoLabel";
-            costoLabel.Size = new System.Drawing.Size(93, 13);
-            costoLabel.TabIndex = 21;
-            costoLabel.Text = "Valor de Consulta:";
-            // 
             // costoTextBox
             // 
+            this.costoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.costoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaMedicosBindingSource, "Costo", true));
-            this.costoTextBox.Location = new System.Drawing.Point(121, 227);
+            this.costoTextBox.Location = new System.Drawing.Point(205, 327);
             this.costoTextBox.Name = "costoTextBox";
             this.costoTextBox.Size = new System.Drawing.Size(100, 20);
             this.costoTextBox.TabIndex = 22;
@@ -363,7 +384,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 256);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(123)))), ((int)(((byte)(141)))));
+            this.ClientSize = new System.Drawing.Size(576, 457);
             this.Controls.Add(costoLabel);
             this.Controls.Add(this.costoTextBox);
             this.Controls.Add(activoLabel);
@@ -382,13 +404,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMedicos";
             this.Text = "Datos de Medicos";
-      //      this.Load += new System.EventHandler(this.FormMedicos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listaMedicosBindingNavigator)).EndInit();
             this.listaMedicosBindingNavigator.ResumeLayout(false);
             this.listaMedicosBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaMedicosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaEspecialidadesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaJornadasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaMedicosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
