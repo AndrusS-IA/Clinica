@@ -63,4 +63,4 @@ C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.Fo
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.FormReporteMedicos.resources
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\itextsharp.dll
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\itextsharp.xml
-C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\NetSpell.SpellChecker.dll
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.FormUsuarios.resources

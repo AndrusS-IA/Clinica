@@ -24,11 +24,15 @@ namespace Clinica
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            var salida = MessageBox.Show("¿Desea salir del programa?", "Salir", MessageBoxButtons.YesNo);
+            if (salida == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
 
-      
+
         private void button1_Click(object sender, EventArgs e)
         {
             Autenticar();
@@ -56,10 +60,11 @@ namespace Clinica
             button1.Text = "Verificando...";
             Application.DoEvents();
 
-            var resultado = _seguridad.Autorizar(usuario, contrasena);
+            var usuarioAutenticado = _seguridad.Autorizar(usuario, contrasena);
 
-            if (resultado == true)
+            if (usuarioAutenticado!= null)
             {
+                Utilidades.usuario = usuarioAutenticado;
                 this.Close();
             }
             else

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Clinica.BL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,42 @@ namespace Clinica
         {
             InitializeComponent();
             customizeDesing();
+
+
         }
 
         private void Login()
         {
             var formLogin = new FormLogin();
             formLogin.ShowDialog();
+
+            if (Utilidades.usuario != null)
+            {
+                tsslUsuario.Text = "Usuario: " + Utilidades.usuario.Personal;
+                tsslCargo.Text = "Cargo: " + Utilidades.usuario.Cargo;
+
+                if (Utilidades.usuario.accesototal == true)
+                {
+                    //Acceso Completo
+                    MessageBox.Show("Bienvenido " + Utilidades.usuario.Personal);
+                }
+
+                if(Utilidades.usuario.nivel1 == true)
+                {
+                    //Accesos nivel 1 (Pacientes, medicos, citas, reportes)
+                    btnUsuario.Visible = false;
+                    MessageBox.Show("Bienvenido Dr.(a) " + Utilidades.usuario.Personal);
+                }
+
+                if (Utilidades.usuario.nivel2 == true)
+                {
+                    //Acesso Nivel 2 (Pacientes, citas, reportes citas, reportes Pacientes)
+                    btnUsuario.Visible = false;
+                    btnMedico.Visible = false;
+                    btnReportMedicos.Visible = false;
+                    MessageBox.Show("Bienvenido " + Utilidades.usuario.Personal);
+                }
+            }
         }
 
         private void customizeDesing()
@@ -92,7 +123,7 @@ namespace Clinica
             //formRecetarios.MdiParent = this;
             //formRecetarios.Show();
 
-             openChildForm(new FormRecetarios());
+            openChildForm(new FormRecetarios());
 
             //Codigo de programacion de link de ventanas
             HideSubMenu();
@@ -144,7 +175,6 @@ namespace Clinica
             Login();
         }
 
-      
         private void btnMini_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -243,6 +273,31 @@ namespace Clinica
             {
                 openChildForm(new FormAcercaPrograma());
             }
+
+            if (e.KeyCode == Keys.F11)
+            {
+                Login();
+            }
+
+            if (e.KeyCode == Keys.F12)
+            {
+                Login();
+                openChildForm(new FormUsuarios());
+            }
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            Login();
+            openChildForm(new FormUsuarios());
+            HideSubMenu();
+        }
+
+        private void btnCambiodeUsuario_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Login();
+            HideSubMenu();
         }
     }
 }

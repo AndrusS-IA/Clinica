@@ -16,6 +16,10 @@ namespace Clinica.BL
             var usuarioAdmin = new Usuario();
             usuarioAdmin.Nombre = "admin";
             usuarioAdmin.Contrasena = "123";
+            usuarioAdmin.Cargo = "Administrador";
+            usuarioAdmin.Personal = "Default";
+            usuarioAdmin.accesototal = true;
+            usuarioAdmin.accesototal = true;
             contexto.Usuarios.Add(usuarioAdmin);
 
 

@@ -152,6 +152,12 @@
     <Compile Include="FormReportePacientes.Designer.cs">
       <DependentUpon>FormReportePacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuNew.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,7 @@
       <DependentUpon>ReportePacientes.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Utilidades.cs" />
     <EmbeddedResource Include="FormAcercaPrograma.resx">
       <DependentUpon>FormAcercaPrograma.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormReportePacientes.resx">
       <DependentUpon>FormReportePacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuNew.resx">
       <DependentUpon>MenuNew.cs</DependentUpon>
@@ -263,6 +273,7 @@
     <None Include="Properties\DataSources\Clinica.BL.RecetasBL.datasource" />
     <None Include="Properties\DataSources\Clinica.BL.SeguridadBL.datasource" />
     <None Include="Properties\DataSources\Clinica.BL.TiposBL.datasource" />
+    <None Include="Properties\DataSources\Clinica.BL.UsuariosBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
