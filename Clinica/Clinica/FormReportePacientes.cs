@@ -38,7 +38,9 @@ namespace Clinica
             crystalReportViewer1.RefreshReport();
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+
+
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }

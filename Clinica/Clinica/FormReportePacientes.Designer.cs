@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReportePacientes));
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -46,23 +46,25 @@
             this.crystalReportViewer1.Size = new System.Drawing.Size(545, 357);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // btnCerrar
+            // button3
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Location = new System.Drawing.Point(457, 359);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrar.TabIndex = 1;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Image = global::Clinica.Properties.Resources.close_icon;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(465, 359);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 25);
+            this.button3.TabIndex = 41;
+            this.button3.Text = "   Cerrar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FormReportePacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 384);
-            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.crystalReportViewer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormReportePacientes";
@@ -74,6 +76,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button button3;
     }
 }

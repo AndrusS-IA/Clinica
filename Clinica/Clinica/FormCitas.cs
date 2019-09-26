@@ -172,5 +172,47 @@ namespace Clinica
         {
 
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        //private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    if (e.KeyChar == Convert.ToChar(Keys.Enter)
+        //    && !string.IsNullOrEmpty(txtBuscar.Text))
+        //    {
+        //        var buscar = txtBuscar.Text;
+
+        //        if (string.IsNullOrEmpty(buscar) == true)
+        //        {
+        //            listaCitasBindingSource.DataSource = _citasBL.ObtenerCitas();
+        //        }
+        //        else
+        //        {
+        //            listaMedicosBindingSource.DataSource = _citasBL.ObtenerCitas(buscar);
+        //        }
+
+        //        listaCitasBindingSource.ResetBindings(false);
+
+        //    }
+        //}
+
+        //private void btnBuscar_Click(object sender, EventArgs e)
+        //{
+        //    var buscar = txtBuscar.Text;
+
+        //    if (string.IsNullOrEmpty(buscar) == true)
+        //    {
+        //        listaCitasBindingSource.DataSource = _citasBL.ObtenerCitas();
+        //    }
+        //    else
+        //    {
+        //        listaMedicosBindingSource.DataSource = _citasBL.ObtenerCitas(buscar);
+        //    }
+
+        //    listaCitasBindingSource.ResetBindings(false);
+        //}
     }
 }

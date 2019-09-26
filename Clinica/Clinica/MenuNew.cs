@@ -166,6 +166,83 @@ namespace Clinica
                 ChildForm.Show();
         }
 
+        private void HoraFecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+            lblFecha.Text = DateTime.Now.ToLongDateString();
 
+        }
+
+        private void btnReportCitas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormReporteCitas());
+            HideSubMenu();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormAcercaPrograma());
+            HideSubMenu();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormFAQ());
+            HideSubMenu();
+        }
+
+        private void btnReportMedicos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormReporteMedicos());
+            HideSubMenu();
+        }
+
+        private void MenuNew_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.F1)
+            {
+                openChildForm(new FormFAQ());
+            }
+
+            if (e.KeyCode == Keys.F2)
+            {
+                openChildForm(new FormPacientes());
+            }
+
+            if (e.KeyCode == Keys.F3)
+            {
+                openChildForm(new FormMedicos());
+            }
+
+            if (e.KeyCode == Keys.F4)
+            {
+                openChildForm(new FormRecetarios());
+            }
+
+            if (e.KeyCode == Keys.F5)
+            {
+                openChildForm(new FormCitas());
+            }
+
+            if (e.KeyCode == Keys.F6)
+            {
+                openChildForm(new FormReportePacientes());
+            }
+
+            if (e.KeyCode == Keys.F7)
+            {
+                openChildForm(new FormReporteCitas());
+            }
+
+            if (e.KeyCode == Keys.F8)
+            {
+                openChildForm(new FormReporteMedicos());
+            }
+
+            if (e.KeyCode == Keys.F9)
+            {
+                openChildForm(new FormAcercaPrograma());
+            }
+        }
     }
 }

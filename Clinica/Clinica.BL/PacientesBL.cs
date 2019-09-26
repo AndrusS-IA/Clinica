@@ -29,6 +29,16 @@ namespace Clinica.BL
             return ListaPacientes;
         }
 
+        public List<Paciente> ObtenerPacientes(string buscar)
+        {
+            var resultado = _contexto.Pacientes
+                .Where(p=> p.Nombre.ToLower().Contains(buscar.ToLower()) == true)
+                .ToList(); //Carga los datos desde la Lista de Pacientes
+
+            
+            return resultado;
+        }
+
         public Resultado GuardarPaciente(Paciente paciente) //para guardar paciente como parametro
         {
             var resultado = Validar(paciente); //Validacion desde la Funcion Resultado / Validar
@@ -122,7 +132,10 @@ namespace Clinica.BL
 
             return resultado;
         }
+
     }
+
+    
 
     public class Paciente //Propiedades de Paciente
     {

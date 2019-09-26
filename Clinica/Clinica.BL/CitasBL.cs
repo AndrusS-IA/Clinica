@@ -29,6 +29,17 @@ namespace Clinica.BL
             return ListaCitas;
         }
 
+        //public List<Cita> ObtenerCitas(string buscar)
+        //{
+        //    var resultado = _contexto.Citas
+        //        .Where(p => p.I.Contains(buscar.ToLower()) == true)
+        //        .ToList(); //Carga los datos desde la Lista de Pacientes
+
+
+        //    return resultado;
+        //}
+
+
         public void CancelarCambios()
         {
             foreach (var item in _contexto.ChangeTracker.Entries())

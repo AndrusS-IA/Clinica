@@ -183,10 +183,30 @@ namespace Clinica
             }
             else
             {
-                listaPacientesBindingSource.DataSource = _pacientes.ObtenerPacientes();
+                listaPacientesBindingSource.DataSource = _pacientes.ObtenerPacientes(buscar);
             }
 
             listaPacientesBindingSource.ResetBindings(false);
+        }
+
+        private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter)
+              && !string.IsNullOrEmpty(txtBuscar.Text))
+            {
+                var buscar = txtBuscar.Text;
+
+                if (string.IsNullOrEmpty(buscar) == true)
+                {
+                    listaPacientesBindingSource.DataSource = _pacientes.ObtenerPacientes();
+                }
+                else
+                {
+                    listaPacientesBindingSource.DataSource = _pacientes.ObtenerPacientes(buscar);
+                }
+
+                listaPacientesBindingSource.ResetBindings(false);
+            }
         }
     }
 }

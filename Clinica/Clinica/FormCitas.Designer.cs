@@ -71,6 +71,9 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaEspecialidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button3 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             activoLabel = new System.Windows.Forms.Label();
             fechaLabel = new System.Windows.Forms.Label();
             fechaCitaLabel = new System.Windows.Forms.Label();
@@ -486,14 +489,49 @@
             // 
             // button3
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.Location = new System.Drawing.Point(546, 343);
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Image = global::Clinica.Properties.Resources.close_icon;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(546, 381);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 39;
-            this.button3.Text = "Cerrar";
+            this.button3.Size = new System.Drawing.Size(75, 25);
+            this.button3.TabIndex = 41;
+            this.button3.Text = "   Cerrar";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label5.Location = new System.Drawing.Point(452, 60);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 13);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "* Busqueda por Nombre o Apellido";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscar.Image = global::Clinica.Properties.Resources.search_icon__1_;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(546, 33);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 43;
+            this.btnBuscar.Text = "    Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+           // this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBuscar.Location = new System.Drawing.Point(444, 34);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscar.TabIndex = 42;
+       //     this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
             // 
             // FormCitas
             // 
@@ -502,6 +540,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(123)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(646, 418);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.citaDetalleDataGridView);
             this.Controls.Add(activoLabel);
@@ -576,5 +617,8 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtBuscar;
     }
 }

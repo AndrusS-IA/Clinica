@@ -61,6 +61,10 @@
             this.codigoTextBox = new System.Windows.Forms.TextBox();
             this.activoCheckBox = new System.Windows.Forms.CheckBox();
             this.costoTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             idLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
             jornadaIdLabel = new System.Windows.Forms.Label();
@@ -380,12 +384,62 @@
             this.costoTextBox.Size = new System.Drawing.Size(100, 20);
             this.costoTextBox.TabIndex = 22;
             // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label5.Location = new System.Drawing.Point(385, 67);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 13);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "* Busqueda por Nombre o Apellido";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscar.Image = global::Clinica.Properties.Resources.search_icon__1_;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(479, 40);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 38;
+            this.btnBuscar.Text = "    Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBuscar.Location = new System.Drawing.Point(377, 41);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscar.TabIndex = 37;
+            this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Image = global::Clinica.Properties.Resources.close_icon;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(479, 420);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 25);
+            this.button3.TabIndex = 40;
+            this.button3.Text = "   Cerrar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // FormMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(123)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(576, 457);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(costoLabel);
             this.Controls.Add(this.costoTextBox);
             this.Controls.Add(activoLabel);
@@ -440,5 +494,9 @@
         private System.Windows.Forms.TextBox codigoTextBox;
         private System.Windows.Forms.CheckBox activoCheckBox;
         private System.Windows.Forms.TextBox costoTextBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Button button3;
     }
 }

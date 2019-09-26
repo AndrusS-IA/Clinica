@@ -58,9 +58,9 @@ namespace Clinica
 
         private void reporteDeCitasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formReporteCitas = new FormReporteCitas();
-            formReporteCitas.MdiParent = this;
-            formReporteCitas.Show();
+            //var formReporteCitas = new FormReporteCitas();
+            //formReporteCitas.MdiParent = this;
+            //formReporteCitas.Show();
         }
 
         private void reporteDePacientesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,16 +72,16 @@ namespace Clinica
 
         private void reporteDePatologiasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formReportePatologias = new FormReportePatologias();
-            formReportePatologias.MdiParent = this;
-            formReportePatologias.Show();
+            //var formReportePatologias = new FormReporteMedicos();
+            //formReportePatologias.MdiParent = this;
+            //formReportePatologias.Show();
         }
 
         private void reporteDeMedicamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formReporteMedicamentos = new FormReporteMedicamentos();
-            formReporteMedicamentos.MdiParent = this;
-            formReporteMedicamentos.Show();
+            //var formReporteMedicamentos = new FormReporteMedicamentos();
+            //formReporteMedicamentos.MdiParent = this;
+            //formReporteMedicamentos.Show();
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
@@ -91,25 +91,25 @@ namespace Clinica
 
         private void acercaDelProgramaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formAcercaPrograma = new FormAcercaPrograma();
-            formAcercaPrograma.MdiParent = this;
-            formAcercaPrograma.Show();
+            //var formAcercaPrograma = new FormAcercaPrograma();
+            //formAcercaPrograma.MdiParent = this;
+            //formAcercaPrograma.Show();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var salida = MessageBox.Show("¿Desea salir del Programa?", "Salir", MessageBoxButtons.YesNo);
-            if (salida == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            //var salida = MessageBox.Show("¿Desea salir del Programa?", "Salir", MessageBoxButtons.YesNo);
+            //if (salida == DialogResult.Yes)
+            //{
+            //    Application.Exit();
+            //}
         }
 
         private void preguntasFrecuentesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formPreguntasFrecuentes = new MenuNew();
-          //  formPreguntasFrecuentes.MdiParent = this;
-            formPreguntasFrecuentes.Show();
+          //  var formPreguntasFrecuentes = new MenuNew();
+          ////  formPreguntasFrecuentes.MdiParent = this;
+          //  formPreguntasFrecuentes.Show();
         }
     }
 }

@@ -122,6 +122,47 @@ namespace Clinica
 
         }
 
-   
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            var buscar = txtBuscar.Text;
+
+            if (string.IsNullOrEmpty(buscar) == true)
+            {
+                listaMedicosBindingSource.DataSource = _medicos.ObtenerMedicos();
+            }
+            else
+            {
+                listaMedicosBindingSource.DataSource = _medicos.ObtenerMedicos(buscar);
+            }
+
+            listaMedicosBindingSource.ResetBindings(false);
+        }
+
+        private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter)
+             && !string.IsNullOrEmpty(txtBuscar.Text))
+            {
+                var buscar = txtBuscar.Text;
+
+                if (string.IsNullOrEmpty(buscar) == true)
+                {
+                    listaMedicosBindingSource.DataSource = _medicos.ObtenerMedicos();
+                }
+                else
+                {
+                    listaMedicosBindingSource.DataSource = _medicos.ObtenerMedicos(buscar);
+                }
+
+                listaMedicosBindingSource.ResetBindings(false);
+
+            }
+
+            }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

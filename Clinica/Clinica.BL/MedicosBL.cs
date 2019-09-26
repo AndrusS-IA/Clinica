@@ -27,6 +27,16 @@ namespace Clinica.BL
             return ListaMedicos;
         }
 
+        public List<Medico> ObtenerMedicos(string buscar)
+        {
+            var resultado = _contexto.Medicos
+                .Where(p => p.Nombre.ToLower().Contains(buscar.ToLower()) == true)
+                .ToList(); //Carga los datos desde la Lista de Pacientes
+
+
+            return resultado;
+        }
+
         public void CancelarCambios()
         {
             foreach (var item in _contexto.ChangeTracker.Entries())

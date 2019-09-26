@@ -73,6 +73,16 @@ namespace Clinica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_icon {
+            get {
+                object obj = ResourceManager.GetObject("close-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_cerrar2 {
             get {
                 object obj = ResourceManager.GetObject("icon cerrar2", resourceCulture);
@@ -143,6 +153,16 @@ namespace Clinica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MSA1 {
+            get {
+                object obj = ResourceManager.GetObject("MSA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MSA2 {
             get {
                 object obj = ResourceManager.GetObject("MSA2", resourceCulture);
@@ -176,6 +196,36 @@ namespace Clinica.Properties {
         internal static System.Drawing.Bitmap res {
             get {
                 object obj = ResourceManager.GetObject("res", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_icon {
+            get {
+                object obj = ResourceManager.GetObject("search-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("search-icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UNAH_escudo {
+            get {
+                object obj = ResourceManager.GetObject("UNAH-escudo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
