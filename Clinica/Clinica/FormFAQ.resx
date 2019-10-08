@@ -121,7 +121,28 @@
     <value>
 ¿Qué es Medical System Advantage?
 
-Es una poderosa herramienta tecnologica, que permite a sus usuarios, crear, modificiar y anular citas medicas, agregando doctores y Pacientes, en una plataforma amigable y confiable.</value>
+Es una poderosa herramienta tecnologica, que permite a sus usuarios, crear, modificiar y anular citas medicas, agregando doctores y Pacientes, en una plataforma amigable y confiable.
+
+¿Que areas cubre Medical System Advantage?
+
+La aplicacion cubre las necesidades basicas de plafinicacion y cobro de citas medicas, definidas por una base de datos que nos permite reportar el total de ingresos por medico y recabar datos importantes por paciente.
+
+¿Como puedo agregar citas en MSA?
+
+Para ello solo debes ir a la seccion de ARCHIVO y seleccionar el boton NUEVA CITA; previamente deberas haber ingreso NUEVOS PACIENTES Y NUEVOS MEDICOS, ambos se agregan con el mismo sistema.
+
+ACCESOS DIRECTOS: (Te compartimos algunos accesos rapidos desde el teclado)
+F1 - FAQ
+F2 - Agregar Nuevo Paciente
+F3 - Agregar Nuevo Medico
+F4 - Agregar Recetario
+F5 - Agregar Nueva Cita
+F6 - Ver Reporte de Pacientes
+F7 - Ver Reporte de Citas
+F8 - Ver Reporte de Medicos
+F9 - Acerca del Programa
+F11 - Cambio de Usuario (Hace un reseteo del Programa)
+F12 - Administrador de Usuario</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>64</value>

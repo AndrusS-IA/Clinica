@@ -64,3 +64,7 @@ C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.Fo
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\itextsharp.dll
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\itextsharp.xml
 C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.FormUsuarios.resources
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\Clinica.exe.manifest
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\bin\Debug\Clinica.application
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.exe.manifest
+C:\Users\CDI PRINCIPAL\Source\Repos\Clinica\Clinica\Clinica\obj\Debug\Clinica.application

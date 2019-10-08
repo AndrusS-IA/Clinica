@@ -49,6 +49,7 @@ namespace Clinica
                     //Acesso Nivel 2 (Pacientes, citas, reportes citas, reportes Pacientes)
                     btnUsuario.Visible = false;
                     btnMedico.Visible = false;
+                    btnRecetario.Visible = false;
                     btnReportMedicos.Visible = false;
                     MessageBox.Show("Bienvenido " + Utilidades.usuario.Personal);
                 }
